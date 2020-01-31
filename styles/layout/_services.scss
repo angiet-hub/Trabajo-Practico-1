@@ -1,0 +1,102 @@
+#services {
+    background-color: $secundary-color;
+    box-shadow: inset 0 27px 23px 0px rgba(0, 0, 0, 0.1);
+    padding: 40px 0px;
+
+    @media(max-width: 1058px){
+        padding: 57px 0px;
+    }
+
+    .header-services {
+        text-align: center;
+
+        .title {
+            font-family: $main-font;
+            color: $main-text-color;
+            font-size: 40px;
+        }
+
+        p {
+            font-family: $secundary-font;
+            color: $secundary-text-color;
+            font-size: 16px;
+        }
+    }
+
+    .cards-services {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        padding: 0 17px;
+    
+        .card-services {
+            background-color: white;
+            border-radius: 12px;
+            width: 32%;
+            height: 168px;
+            margin: 24px;
+            box-shadow: 0px -2px 20px -9px;
+            position: relative;
+            overflow: hidden;
+            transition: .4s;
+
+            @media(max-width: 1058px){
+                width: 38%
+            }
+
+            @media(max-width: 747px){
+                width: 64%
+            }
+
+            .icon {
+               
+                i {
+                    font-size: 60px; 
+                    position: absolute;
+                    top: calc(50% - 30px);
+                    left: -14px;
+                }
+            }
+
+            .title {
+                font-family: $main-font;
+                padding: 0 70px;
+            }
+
+            p {
+                font-family: $secundary-font;
+                padding: 0 70px;
+            }
+
+            .icon-chart {
+                color: pink;
+            }
+            .icon-bookmark {
+                color: yellow;
+            }
+            .icon-note {
+                color: lightseagreen;
+            }
+            .icon-tachometer {
+                color: green;
+            }
+            .icon-globe {
+                color: rgb(125, 205, 50);
+            }
+            .icon-clock {
+                color:rgb(51, 51, 245);
+            }
+
+            &:hover {
+                transform: translatey(-20px);
+            }
+            &:hover .title {
+                color:$main-color;
+                cursor: pointer;
+            }
+            
+        }
+
+    }
+}

@@ -1,0 +1,17 @@
+.button-back {
+    width: 50px;
+    display: block;
+    height: 50px;
+    border-radius: 50%;
+    background-color:$selector-color;
+    position: fixed;
+    right: 13px;
+    bottom: 14px;
+    cursor: pointer;
+
+    i {
+        color:white;
+        margin: 13px;
+        font-size: 25px;
+    }
+}

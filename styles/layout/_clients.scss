@@ -1,0 +1,54 @@
+#clients {
+    background-color: $secundary-color;
+    box-shadow: inset 0 27px 23px 0px rgba(0, 0, 0, 0.1);
+    padding: 40px 0px;
+
+    .header-clients {
+        text-align: center;
+
+        .title {
+            font-family: $main-font;
+            color: $main-text-color;
+            font-size: 40px;
+        }
+
+        p {
+            font-family: $secundary-font;
+            color: $secundary-text-color;
+            font-size: 16px;
+        }
+    }
+
+    .container-clients {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 75px;
+
+        .box-clients {
+            width: 24%;
+            height: 144px;
+            background-color: white;
+            text-align: center;
+            border: 1px solid $secundary-color;
+
+            @media(max-width: 1058px){
+                width: 34%;
+            }
+
+            @media(max-width:747px){
+                width: 62%;
+            }
+
+            img {
+                width: 54%;
+                margin:35px;
+                transition: .6s;
+            }
+
+            &:hover img{
+                transform: scale(1.5);
+            }
+        }
+    }
+}

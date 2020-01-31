@@ -1,0 +1,134 @@
+#portfolio {
+    margin-top: -22px;
+    padding: 40px 0px;
+
+    .header-portfolio {
+        text-align: center;
+        font-family: $main-font;
+        color: $main-text-color;
+        font-size: 40px;
+    }
+
+    .buttons-pf {
+        display:flex;
+        justify-content: center;
+
+        .btn-pf {
+            width: 57px;
+            background-color: $secundary-color;
+            color:$main-color;
+            border-radius: 20px;
+            height: 33px;
+            font-family: $secundary-font;
+            text-align: center;
+            font-size: 12px;
+            line-height: 33px;
+            margin: 0 13px;
+            border:none;
+            transition: .5s;
+
+            &:hover {
+                background-color: $color-hover;
+                color:white;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .container-box-pf {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .box-portfolio {
+            width: 26%;
+            height: 268px;
+            margin: 17px;
+            overflow: hidden;
+            border-radius: 10px;
+            background-color: $color-hover;
+            position: relative;
+
+            @media(max-width: 1058px){
+                width: 41%;
+            }
+
+            @media(max-width: 747px){
+                width: 67%
+            }
+            
+            img {
+                width: 100%;
+                object-fit: cover;
+                height: 100%; 
+                transition: .5s;
+                
+                
+            }
+
+            .box-info {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                top: 58px;
+                line-height: 0;
+                display:none;
+                transition: .5s;
+
+                .title {
+                    font-family: $main-font;
+                    color:white;
+                    font-size: 20px;
+                    transition:.3s;
+
+                    &:hover {
+                        color:$color-hover;
+                        cursor: pointer;
+                    }
+                }
+
+                span {
+                    color:white;
+                    font-family: $secundary-font;
+                    font-size: 13px;
+                }
+
+                .icons {
+                    display: flex;
+                    justify-content: center;
+                    margin:28px;
+
+                    div {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        background-color:blue;
+                        color:white;
+                        margin: 0 6px;
+                        transition:.3s;
+
+                        i {
+                            padding: 6px;
+                        }
+                        
+                        &:hover {
+                        background-color: $selector-color;
+                        cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            &:hover .box-info {
+                display:block;
+            }
+
+            &:hover img {
+                opacity: .5;
+                }
+            
+        }
+
+    }
+}

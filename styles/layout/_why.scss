@@ -1,0 +1,109 @@
+#why {
+    background-color: $main-color;
+    margin-top: -22px;
+    padding: 40px 0px;
+
+    .header-why {
+        text-align: center;
+
+        .title {
+            font-family: $main-font;
+            color: $secundary-color;
+            font-size: 40px;
+        }
+
+        p {
+            font-family: $secundary-font;
+            color: $secundary-color;
+            font-size: 16px;
+        }
+    }
+
+    .container-why {
+        display:flex;
+        padding: 0 105px;
+
+        @media(max-width: 1058px){
+            flex-direction: column;
+        }
+
+        .box-why {
+            background-color: $color-hover;
+            margin: 34px 26px;
+            width: 40%;
+            height: 268px;
+            text-align: center;
+            border-radius: 15px;
+            transition: .4s;
+
+            @media(max-width: 1058px){
+                width: 100%;
+                margin:30px 0;
+            }
+
+            i {
+                margin-top: 30px;
+                color: white;
+                font-size: 55px;
+            }
+
+            .title {
+                font-family: $main-font;
+                color: $secundary-color;
+                font-size: 23px;
+                line-height: 0px;
+            }
+
+            p {
+                font-family: $secundary-font;
+                color: $secundary-color;
+                padding: 0 12px;
+            }
+
+            a {
+                font-family: $secundary-font;
+                color: $secundary-color;
+                font-weight: bolder;
+
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+
+            &:hover {
+                background-color: $selector-color;
+            }
+        }
+    }
+
+    .numbers {
+        display:flex;
+        margin: 72px 0px;
+        flex-wrap: wrap;
+
+        .num {
+            flex:1;
+            width: 40%;
+            height: 122px;
+            text-align: center;
+
+            @media(max-width:747px){
+                flex:none;
+                width: 49%;
+            }
+        
+            span {
+                font-family: $main-font;
+                color: $secundary-color;
+                font-size: 53px;
+                font-weight: 700;
+            }
+
+            p {
+                font-family: $secundary-font;
+                color: $secundary-color;
+            }
+        }
+    }
+}
