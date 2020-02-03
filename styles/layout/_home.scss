@@ -26,6 +26,9 @@
                 float: none; 
             } 
         }
+        @media (max-width:600px) {
+            padding:10px;
+        }
 
         .info-home {
             width: 50%;

@@ -33,6 +33,10 @@
             flex-direction: column;
         }
 
+        @media (max-width:600px) {
+            padding:10px;
+        }
+
         .content-about {
             width: 50%;
 
@@ -101,7 +105,11 @@
 
         @media(max-width: 1058px) {
             flex-direction: column-reverse;
-            
+        
+        }
+
+        @media (max-width:600px) {
+            padding:10px;
         }
 
         .content-extra1 {
@@ -111,6 +119,9 @@
 
             @media(max-width: 1058px){
                 width: 100%;
+            }
+            @media (max-width:600px) {
+                padding:10px;
             }
 
             .title {
@@ -141,12 +152,19 @@
         @media(max-width: 1058px){
             flex-direction: column;
         }
+        @media (max-width:600px) {
+            padding:10px;
+        }
 
         .content-extra2 {
             width: 50%;
 
             @media(max-width: 1058px){
-                width:100%}
+                width:100%
+            }
+            @media (max-width:600px) {
+                padding:10px;
+            }
         
 
             .title {

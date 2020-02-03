@@ -3,6 +3,10 @@ footer {
     color:white;
     padding: 25px 48px;
 
+    @media (max-width:600px) {
+        padding: 0;
+    }
+
     .footer-container {
         display: flex;
         flex-wrap: wrap;
@@ -22,6 +26,10 @@ footer {
             @media(max-width: 1058px){
                 flex:none;
                 width: 50%;
+            }
+
+            @media (max-width:600px) {
+                width: 85%;
             }
 
             div {
@@ -55,6 +63,9 @@ footer {
             @media(max-width:747px){
                 width: 60%;
             }
+            @media (max-width:600px) {
+                width: 85%;
+            }
         
             h4 {
             font-size: 40px;
@@ -77,6 +88,9 @@ footer {
             }
             @media(max-width:747px){
                 width: 60%;
+            }
+            @media (max-width:600px) {
+                width: 85%;
             }
 
             li {
@@ -106,6 +120,9 @@ footer {
         @media(max-width:747px){
             width: 60%;
         }
+        @media (max-width:600px) {
+            width: 85%;
+        }
 
             p {
                 font-family: $secundary-font;
@@ -124,6 +141,9 @@ footer {
             @media(max-width:747px){
                 width: 60%;
             }
+            @media (max-width:600px) {
+                width: 85%;
+            }
 
             p {
                 font-family: $secundary-font;
@@ -133,6 +153,12 @@ footer {
 
             form {
                 padding-left: 33px;
+                display: flex;
+
+                @media (max-width:600px) {
+                    flex-direction: column;
+                    padding: 0;
+                }
 
                 input {
                     height: 37px;

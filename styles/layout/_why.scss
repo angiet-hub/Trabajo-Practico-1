@@ -26,6 +26,9 @@
         @media(max-width: 1058px){
             flex-direction: column;
         }
+        @media (max-width:600px) {
+            padding:0 20px;
+        }
 
         .box-why {
             background-color: $color-hover;

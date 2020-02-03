@@ -30,6 +30,9 @@
             @media(max-width:747px) {
                 position:static;
             }
+            @media (max-width:600px) {
+                width: 35%;
+            }
         }
 
         .box-info {
