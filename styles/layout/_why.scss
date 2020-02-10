@@ -8,13 +8,13 @@
 
         .title {
             font-family: $main-font;
-            color: $secundary-color;
+            color: $secondary-color;
             font-size: 40px;
         }
 
         p {
-            font-family: $secundary-font;
-            color: $secundary-color;
+            font-family: $secondary-font;
+            color: $secondary-color;
             font-size: 16px;
         }
     }
@@ -52,20 +52,20 @@
 
             .title {
                 font-family: $main-font;
-                color: $secundary-color;
+                color: $secondary-color;
                 font-size: 23px;
                 line-height: 0px;
             }
 
             p {
-                font-family: $secundary-font;
-                color: $secundary-color;
+                font-family: $secondary-font;
+                color: $secondary-color;
                 padding: 0 12px;
             }
 
             a {
-                font-family: $secundary-font;
-                color: $secundary-color;
+                font-family: $secondary-font;
+                color: $secondary-color;
                 font-weight: bolder;
 
                 &:hover {
@@ -98,14 +98,14 @@
         
             span {
                 font-family: $main-font;
-                color: $secundary-color;
+                color: $secondary-color;
                 font-size: 53px;
                 font-weight: 700;
             }
 
             p {
-                font-family: $secundary-font;
-                color: $secundary-color;
+                font-family: $secondary-font;
+                color: $secondary-color;
             }
         }
     }

@@ -33,8 +33,6 @@
         margin-right: 53px;
     }
 
-    
-
     #header-list {
         display: flex;
         float: right;
@@ -48,8 +46,8 @@
             transform: translateX(-220px);
             top: 56px;
             width: 180px;
-            background-color:white;
-            
+            background-color:rgba(255, 255, 255, 0.815);
+            height: 541px; 
         }
 
         &:target {
